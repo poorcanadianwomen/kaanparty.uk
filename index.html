@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="kaanparty.uk">
+<meta property="og:description" content="independent web stuff :D">
+<meta property="og:url" content="https://kaanparty.uk/">
+<meta property="og:image" content="https://kaanparty.uk/kaanparty.png">
+<meta property="og:image:alt" content="kaanparty.uk">
+<meta property="og:image:type" content="image/png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="kaanparty.uk">
+<meta name="twitter:description" content="independent web stuff :D">
+<meta name="twitter:image" content="https://kaanparty.uk/kaanparty.png">
+
+<title>kaanparty.uk</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PAGE
+   ========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    background: #050505;
+    color: #d6d6d6;
+
+    font-family: "Courier New", Courier, monospace;
+
+    overflow-x: hidden;
+}
+
+
+.page {
+    width: min(1100px, calc(100% - 30px));
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding: 15px 0 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* =========================
+   ASCII LOGO
+   ========================= */
+
+.logo-wrapper {
+    width: 100%;
+
+    max-width: 100%;
+
+    text-align: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    margin: 0 auto;
+}
+
+
+.ascii-logo {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    color: #d6d6d6;
+
+    font-family: "Courier New", Courier, monospace;
+
+    font-size: 7px;
+    line-height: 7px;
+
+    text-align: left;
+
+    white-space: pre;
+
+    max-width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.nav-links {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    gap: 18px;
+
+    margin: 25px auto 0;
+
+    text-align: center;
+}
+
+
+.nav-links a {
+    display: inline-block;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+.nav-links a:hover {
+    color: #fff;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.content {
+    width: 100%;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+
+.content h2 {
+    color: #888;
+
+    font-size: 12px;
+
+    font-weight: normal;
+}
+
+
+.content p {
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .page {
+        width: calc(100% - 20px);
+
+        padding-top: 15px;
+    }
+
+
+    .ascii-logo {
+        font-size: 4px;
+
+        line-height: 4px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+
+        margin-top: 20px;
+    }
+
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    .content {
+        margin-top: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+<!-- =========================
+     ASCII LOGO
+     ========================= -->
+
+<div class="logo-wrapper">
+
+<pre class="ascii-logo">
+    
+ ███████████ █████                  █████                █████                                       █████                                                                    █████                             █████     
+▒█▒▒▒███▒▒▒█▒▒███                  ▒▒███                ▒▒███                                       ▒▒███                                                                    ▒▒███                             ▒▒███      
+▒   ▒███  ▒  ▒███████    ██████     ▒███  ████████    ███████   ██████  █████ █████                  ▒███ █████  ██████    ██████   ████████   ████████   ██████   ████████  ███████   █████ ████    █████ ████ ▒███ █████
+    ▒███     ▒███▒▒███  ███▒▒███    ▒███ ▒▒███▒▒███  ███▒▒███  ███▒▒███▒▒███ ▒▒███     ██████████    ▒███▒▒███  ▒▒▒▒▒███  ▒▒▒▒▒███ ▒▒███▒▒███ ▒▒███▒▒███ ▒▒▒▒▒███ ▒▒███▒▒███▒▒▒███▒   ▒▒███ ▒███    ▒▒███ ▒███  ▒███▒▒███ 
+    ▒███     ▒███ ▒███ ▒███████     ▒███  ▒███ ▒███ ▒███ ▒███ ▒███████  ▒▒▒█████▒     ▒▒▒▒▒▒▒▒▒▒     ▒██████▒    ███████   ███████  ▒███ ▒███  ▒███ ▒███  ███████  ▒███ ▒▒▒   ▒███     ▒███ ▒███     ▒███ ▒███  ▒██████▒  
+    ▒███     ▒███ ▒███ ▒███▒▒▒      ▒███  ▒███ ▒███ ▒███ ▒███ ▒███▒▒▒    ███▒▒▒███                   ▒███▒▒███  ███▒▒███  ███▒▒███  ▒███ ▒███  ▒███ ▒███ ███▒▒███  ▒███       ▒███ ███ ▒███ ▒███     ▒███ ▒███  ▒███▒▒███ 
+    █████    ████ █████▒▒██████     █████ ████ █████▒▒████████▒▒██████  █████ █████                  ████ █████▒▒████████▒▒████████ ████ █████ ▒███████ ▒▒████████ █████      ▒▒█████  ▒▒███████  ██ ▒▒████████ ████ █████
+   ▒▒▒▒▒    ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒     ▒▒▒▒▒ ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒ ▒▒▒▒▒                  ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒ ▒▒▒▒ ▒▒▒▒▒  ▒███▒▒▒   ▒▒▒▒▒▒▒▒ ▒▒▒▒▒        ▒▒▒▒▒    ▒▒▒▒▒███ ▒▒   ▒▒▒▒▒▒▒▒ ▒▒▒▒ ▒▒▒▒▒ 
+                                                                                                                                               ▒███                                     ███ ▒███                          
+                                                                                                                                               █████                                   ▒▒██████                           
+                                                                                                                                              ▒▒▒▒▒                                     ▒▒▒▒▒▒
+</pre>
+
+</div>
+<div class="gif-wrapper">
+
+    <img
+        src="3QNDO63OFVP47QYUBCFN5MUFOLQAE527.gif"
+        alt="animated GIF"
+        class="site-gif"
+    >
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
+<div class="nav-links">
+
+    <a href="https://git.kaanparty.uk">HALL OF SHAME</a>
+
+    <a href="https://news.kaanparty.uk">Local News</a>
+
+    <a href="https://blog.kaanparty.uk">Blog</a>
+
+    <a href="https://archive.kaanparty.uk">Archive</a>
+
+    <a href="https://www.kaanparty.uk">WWW</a>
+
+    <a href="https://0x1fc.net">0x1fc Syndicate</a>
+
+    <a href="https://tsubakiproject.qzz.io">Tsubaki Project Forum</a>
+
+</div>
+<div class="content">
+
+This is the index.html
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>
