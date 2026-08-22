@@ -8,16 +8,16 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="kaanparty.uk">
-<meta property="og:description" content="the index page">
+<meta property="og:description" content="independent web stuff :D">
 <meta property="og:url" content="https://kaanparty.uk/">
-<meta property="og:image" content="https://kaanparty.uk/icon.png">
+<meta property="og:image" content="https://kaanparty.uk/kaanparty.png">
 <meta property="og:image:alt" content="kaanparty.uk">
-<meta property="og:image:type" content="icon.png">
+<meta property="og:image:type" content="image/png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="kaanparty.uk">
-<meta name="twitter:description" content="the index page">
-<meta name="twitter:image" content="https://kaanparty.uk/icon.png">
+<meta name="twitter:description" content="independent web stuff :D">
+<meta name="twitter:image" content="https://kaanparty.uk/kaanparty.png">
 
 <title>kaanparty.uk</title>
 
@@ -100,11 +100,29 @@ body {
 
     white-space: pre;
 
+    max-width: none;
+}
+
+
+/* =========================
+   GIF
+   ========================= */
+
+.gif-wrapper {
+    width: 100%;
+
+    text-align: center;
+
+    margin: 10px auto;
+}
+
+
+.site-gif {
+    display: inline-block;
+
     max-width: 100%;
 
-    overflow-x: auto;
-
-    overflow-y: hidden;
+    height: auto;
 }
 
 
@@ -159,9 +177,7 @@ body {
 
 .content {
     width: 100%;
-
-    margin: 30px auto;
-
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -179,6 +195,55 @@ body {
     color: #777;
 
     font-size: 12px;
+}
+
+
+/* =========================
+   CRT TV
+   ========================= */
+
+.crt-tv {
+    position: relative;
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* GIF INSIDE CRT SCREEN */
+
+.crt-gif {
+    position: absolute;
+
+    z-index: 1;
+
+    top: 20%;
+    left: 25%;
+
+    width: 39%;
+    height: 57%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CRT television frame */
+
+.crt-frame {
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    height: auto;
+
+    pointer-events: none;
 }
 
 
@@ -205,6 +270,7 @@ body {
     .nav-links {
         flex-wrap: wrap;
 
+        gap: 12px;
 
         margin-top: 20px;
     }
@@ -217,6 +283,15 @@ body {
 
     .content {
         margin-top: 20px;
+    }
+
+
+    .crt-tv {
+        width: 100%;
+
+        max-width: 550px;
+
+        margin-top: 40px;
     }
 
 }
@@ -253,20 +328,6 @@ body {
 </pre>
 
 </div>
-<div class="gif-wrapper">
-
-    <img
-        src="3QNDO63OFVP47QYUBCFN5MUFOLQAE527.gif"
-        alt="animated GIF"
-        class="site-gif"
-    >
-
-</div>
-
-
-<!-- =========================
-     NAVIGATION
-     ========================= -->
 
 <div class="nav-links">
 
@@ -285,12 +346,19 @@ body {
     <a href="https://tsubakiproject.qzz.io">Tsubaki Project Forum</a>
 
 </div>
-<div class="content">
+    <div class="crt-tv">
 
-This is the index.html
+        <img
+            src="A3DHQFMLMBMQ5M5GL2NWS6FMDJT6RPE5.gif"
+            class="crt-gif"
+            alt="CRT screen animation">
 
-</div>
+        <img
+            src="CRT.png"
+            class="crt-frame"
+            alt="CRT television">
 
+    </div>
 
 </div>
 
